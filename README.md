@@ -1,2 +1,6 @@
-# code-samples
-Some bits of code from projects I've worked on, helpfully annotated.
+Code Samples
+============
+
+Some annotated bits of code from projects I've worked on.
+
+
