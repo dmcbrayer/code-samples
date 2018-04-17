@@ -1,3 +1,8 @@
+# This class allows us to step through a given Range.  The need here was
+# that we needed to generate custom reports for various date ranges, monthly
+# weekly, yearly, etc.  This allows us to take a predefined range, define how
+# big each step should be, and then pass in a block to do an action.
+# 
 # Prefer doing this over monkeypatching Range.
 
 # range_class = SteppedDateRange.new(1.week.ago..1.week.from_now)

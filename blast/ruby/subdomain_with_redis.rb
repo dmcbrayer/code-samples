@@ -1,5 +1,9 @@
-# frozen_string_literal: true
-
+# This is a rack middleware that integrates with the Apartment gem.  We used
+# apartment to separate data between our clients in different tenants within
+# the database.  With this, we piggyback on Apartment's existing functionality
+# that chooses the tenant based on the subdomain, and also switches to a different
+# Redis namespace to further isolate data between tenants.
+#
 #
 class Apartment::Elevators::SubdomainWithRedis < Apartment::Elevators::Subdomain
   def call(env)
